@@ -55,9 +55,21 @@ i {
     height: 40px;
     width: 100%;
     font-size: 18px;
+    color: blue;
+}
+
+#input:hover {
+    border: 2px solid blue;
 }
 
 .visible {
     display: none;
 }
 
+p {
+    background-color: #f5f5f5;
+    min-height: 35px;
+    text-align: start;
+    padding-top: 10px;
+    border: 1px solid black; 
+}
