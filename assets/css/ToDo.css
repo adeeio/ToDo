@@ -1,0 +1,26 @@
+body {
+    
+     background-repeat: no-repeat;
+     background-size: contain, cover;
+}
+
+html {
+    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1,
+     #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+#container {
+    margin: 100px auto;
+    border: 3px solid blue;
+    width: 400px;
+    background: white;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+ul {
+    list-style-type: none;
+}
