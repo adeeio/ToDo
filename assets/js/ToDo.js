@@ -1,8 +1,9 @@
 'use-strict';
 
-$("li").on("click", (e) => {
+$("li").on("click", "p", (e) => {
     let element = $(e.target);
     element.toggleClass( "checked", 100);
+    e.stopPropagation();
 });
 
 $("span").on("click", (e) => {
@@ -12,3 +13,4 @@ $("span").on("click", (e) => {
     });
     e.stopPropagation();
 });
+

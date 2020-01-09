@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     
      background-repeat: no-repeat;
@@ -13,7 +19,8 @@ html {
     margin: 100px auto;
     border: 3px solid blue;
     width: 400px;
-    background: white;
+    background: #f6f6f6;
+
 }
 
 .checked {
@@ -23,5 +30,42 @@ html {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
+p {
+    margin: 0;
+    display: inline-block;
+    width: auto;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.trash {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.plus {
+    float: right;
+}
+
+h1{
+    padding: 20px;
+    background: blue;
+    color: #f6f6f6;
+}
+
+input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0 10px 5px;
+}
+
+li:nth-child(2) {
+    background: #D16BA5;
+}
+
+.test {
+    width: 40px;
+}
