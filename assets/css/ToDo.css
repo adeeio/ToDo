@@ -38,12 +38,21 @@ p {
     display: inline-block;
     width: auto;
     font-size: 20px;
-    padding: 10px 0;
+    padding: 10px 0 10px 5px;
 }
 
-.trash {
+#trash {
     padding: 10px 20px;
     font-size: 20px;
+    background: red;
+    border: 2px solid red;
+    color: #f6f6f6;
+    opacity: 0;
+}
+
+li:hover #trash {
+    opacity: 1;
+    transition: linear 0.7s;
 }
 
 .plus {
@@ -66,6 +75,4 @@ li:nth-child(2) {
     background: #D16BA5;
 }
 
-.test {
-    width: 40px;
-}
+
