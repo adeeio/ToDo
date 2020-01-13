@@ -77,7 +77,7 @@ input {
     display: inline-block;
 }
 
-li:nth-child(2) {
+li:nth-child(2n) {
     background: #D16BA5;
 }
 
