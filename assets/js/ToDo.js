@@ -14,3 +14,8 @@ $("span").on("click", "i", (e) => {
     
 });
 
+$("#plus").on("click", (e) => {
+    $("#input").toggleClass("visibility");
+    e.stopPropagation();
+});
+

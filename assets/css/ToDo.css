@@ -74,8 +74,13 @@ input {
     width: 100%;
     font-size: 20px;
     padding: 10px 0 10px 5px;
+    display: inline-block;
 }
 
 li:nth-child(2) {
     background: #D16BA5;
+}
+
+.visibility {
+    display: none;
 }
