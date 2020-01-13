@@ -1,18 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    
-     background-repeat: no-repeat;
-     background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
 }
 
 html {
-    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1,
-     #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
 #container {
@@ -20,7 +18,6 @@ html {
     border: 3px solid blue;
     width: 400px;
     background: #f6f6f6;
-
 }
 
 .checked {
@@ -45,21 +42,29 @@ p {
     padding: 10px 20px;
     font-size: 20px;
     background: red;
-    border: 2px solid red;
+    border: none;
     color: #f6f6f6;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     opacity: 0;
+    display: none;
 }
 
+
 li:hover #trash {
+    cursor: pointer;
     opacity: 1;
-    transition: linear 0.7s;
+    display: inline-block;
 }
 
 .plus {
     float: right;
 }
 
-h1{
+h1 {
     padding: 20px;
     background: blue;
     color: #f6f6f6;
@@ -74,5 +79,3 @@ input {
 li:nth-child(2) {
     background: #D16BA5;
 }
-
-

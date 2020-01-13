@@ -6,11 +6,11 @@ $("li").on("click", "p", (e) => {
     e.stopPropagation();
 });
 
-$("span").on("click", (e) => {
+$("span").on("click", "i", (e) => {
     let element = $(e.target);
-    element.parent().fadeToggle(400, function () {
+    element.parent().parent().fadeToggle(400, function () {
         $(this).remove();
     });
-    e.stopPropagation();
+    
 });
 
