@@ -9,12 +9,14 @@ $("#input").on("keypress", (e) => {
     }
 });
 
-$("li").on("click", "p", (e) => {
+$("#container").on("click", "li", "p", (e) => {
     let element = $(e.target);
     element.toggleClass( "checked", 50);
 });
 
-$("span").on("click", "i", (e) => {
+
+
+$("#container").on("click","span", "i", (e) => {
     let element = $(e.target);
     element.parent().parent().fadeToggle(400, function () {
         $(this).remove();

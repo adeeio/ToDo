@@ -44,11 +44,11 @@ p {
     background: red;
     border: none;
     color: #f6f6f6;
-    -moz-transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -moz-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    -ms-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
     opacity: 0;
     display: none;
 }
@@ -68,6 +68,9 @@ h1 {
     padding: 20px;
     background: #3b5998;
     color: #f6f6f6;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 input {
