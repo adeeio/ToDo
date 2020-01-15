@@ -38,26 +38,27 @@ p {
     padding: 10px 0 10px 5px;
 }
 
-#trash {
+li > #trash {
     padding: 10px 20px;
     font-size: 20px;
     background: red;
-    border: none;
+    border: 1px solid red;
     color: #f6f6f6;
     -moz-transition: all .9s ease-in-out;
     -webkit-transition: all .9s ease-in-out;
     -ms-transition: all .9s ease-in-out;
     -o-transition: all .9s ease-in-out;
     transition: all .9s ease-in-out;
-    opacity: 0;
-    display: none;
+    overflow: hidden;
+    height: 0; opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
 }
 
 
-li:hover #trash {
+li:hover > #trash {
     cursor: pointer;
-    opacity: 1;
-    display: inline-block;
+    height: auto; opacity: 1;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
 }
 
 .plus {

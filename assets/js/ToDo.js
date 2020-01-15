@@ -12,6 +12,7 @@ $("#input").on("keypress", (e) => {
 $("#container").on("click", "li", "p", (e) => {
     let element = $(e.target);
     element.toggleClass( "checked", 50);
+    e.stopPropagation();
 });
 
 
