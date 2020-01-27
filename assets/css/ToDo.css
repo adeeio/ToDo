@@ -44,21 +44,23 @@ li > #trash {
     background: red;
     border: 1px solid red;
     color: #f6f6f6;
-    -moz-transition: all .9s ease-in-out;
-    -webkit-transition: all .9s ease-in-out;
-    -ms-transition: all .9s ease-in-out;
-    -o-transition: all .9s ease-in-out;
-    transition: all .9s ease-in-out;
-    overflow: hidden;
-    height: 0; opacity: 0;
-    transition: height 0ms 400ms, opacity 400ms 0ms;
+    opacity: 0;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    transition: ease-in .2s;
 }
+
+li:hover > p {
+    margin-left: 60px;
+}
+
 
 
 li:hover > #trash {
     cursor: pointer;
-    height: auto; opacity: 1;
-    transition: height 0ms 0ms, opacity 600ms 0ms;
+    opacity: 1;   
+    visibility: visible;
 }
 
 .plus {
@@ -75,10 +77,10 @@ h1 {
 }
 
 input {
+    display: inline-block;
     width: 100%;
     font-size: 20px;
     padding: 10px 0 10px 5px;
-    display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
